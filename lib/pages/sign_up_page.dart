@@ -58,7 +58,11 @@ class _SignUPState extends State<SignUP> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Sign Up"),
+        title: Text("Sign Up",
+            style: TextStyle(
+                color: Color.fromRGBO(0, 200, 0, 40),
+                fontWeight: FontWeight.bold,
+                fontSize: 30)),
       ),
       body: Center(
         child: Padding(
@@ -79,7 +83,10 @@ class _SignUPState extends State<SignUP> {
                     }
                     return null;
                   },
-                  decoration: const InputDecoration(labelText: "Email"),
+                  decoration: const InputDecoration(
+                      labelText: "Email",
+                      labelStyle:
+                          TextStyle(color: Color.fromRGBO(0, 200, 0, 10))),
                 ),
                 TextFormField(
                   controller: _password,
@@ -90,12 +97,18 @@ class _SignUPState extends State<SignUP> {
                     return null;
                   },
                   obscureText: true,
-                  decoration: const InputDecoration(labelText: "Password"),
+                  decoration: const InputDecoration(
+                      labelText: "Password",
+                      labelStyle:
+                          TextStyle(color: Color.fromRGBO(0, 200, 0, 10))),
                 ),
                 SizedBox(
                   width: double.infinity,
                   height: 45,
                   child: ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(
+                            Color.fromRGBO(0, 0, 0, 0.965))),
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
                         createUserWithEmailAndPassword();
@@ -107,15 +120,24 @@ class _SignUPState extends State<SignUP> {
                               color: Colors.green,
                             ),
                           )
-                        : const Text("SignUp"),
+                        : const Text(
+                            "SignUp",
+                            style:
+                                TextStyle(color: Color.fromRGBO(0, 200, 0, 40)),
+                          ),
                   ),
                 ),
                 SizedBox(
                   width: double.infinity,
                   height: 45,
                   child: ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(
+                            Color.fromRGBO(0, 200, 0, 40))),
                     onPressed: widget.onPressed,
-                    child: const Text("Login"),
+                    child: const Text("Login",
+                        style:
+                            TextStyle(color: Color.fromRGBO(0, 0, 0, 0.847))),
                   ),
                 ),
               ],

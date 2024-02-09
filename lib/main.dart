@@ -1,4 +1,9 @@
+import 'dart:io';
+
 import 'package:e_waste_catalog/pages/auth_page.dart';
+import 'package:e_waste_catalog/pages/form_page.dart';
+import 'package:e_waste_catalog/pages/guide_page.dart';
+import 'package:e_waste_catalog/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -20,7 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(),
-      home: const AuthPage(),
+      home: AuthPage(),
     );
   }
 }
