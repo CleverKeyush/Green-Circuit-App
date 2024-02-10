@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class LoginPage extends StatefulWidget {
   final void Function()? onPressed;
-  const LoginPage({super.key, required this.onPressed});
+  const LoginPage({Key? key, required this.onPressed}) : super(key: key);
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -53,7 +53,19 @@ class _LoginPageState extends State<LoginPage> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Login"),
+        title: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              "GreenCircuit",
+              style: TextStyle(
+                color: Color.fromRGBO(0, 200, 0, 40),
+                fontWeight: FontWeight.bold,
+                fontSize: 30,
+              ),
+            ),
+          ],
+        ),
       ),
       body: Center(
         child: Padding(
@@ -74,7 +86,10 @@ class _LoginPageState extends State<LoginPage> {
                     }
                     return null;
                   },
-                  decoration: const InputDecoration(labelText: "Email"),
+                  decoration: const InputDecoration(
+                      labelText: "Email",
+                      labelStyle:
+                          TextStyle(color: Color.fromRGBO(0, 200, 0, 10))),
                 ),
                 TextFormField(
                   controller: _password,
@@ -85,12 +100,18 @@ class _LoginPageState extends State<LoginPage> {
                     return null;
                   },
                   obscureText: true,
-                  decoration: const InputDecoration(labelText: "Password"),
+                  decoration: const InputDecoration(
+                      labelText: "Password",
+                      labelStyle:
+                          TextStyle(color: Color.fromRGBO(0, 200, 0, 10))),
                 ),
                 SizedBox(
                   width: double.infinity,
                   height: 45,
                   child: ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(
+                            Color.fromRGBO(0, 0, 0, 0.965))),
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
                         signInWithEmailAndPassword();
@@ -99,18 +120,29 @@ class _LoginPageState extends State<LoginPage> {
                     child: isLoading
                         ? const Center(
                             child: CircularProgressIndicator(
-                              color: Colors.green,
+                              color: Color.fromRGBO(0, 200, 0, 58),
                             ),
                           )
-                        : const Text("Login"),
+                        : const Text(
+                            "Login",
+                            style: TextStyle(
+                              color: Color.fromRGBO(0, 200, 0, 40),
+                            ),
+                          ),
                   ),
                 ),
                 SizedBox(
                   width: double.infinity,
                   height: 45,
                   child: ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(
+                            Color.fromRGBO(0, 200, 0, 10))),
                     onPressed: widget.onPressed,
-                    child: const Text("SignUp"),
+                    child: const Text(
+                      "SignUp",
+                      style: TextStyle(color: Colors.black),
+                    ),
                   ),
                 ),
               ],
