@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:e_waste_catalog/pages/guide_page.dart';
+import 'package:e_waste_catalog/pages/community_post.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({super.key});
@@ -53,7 +54,8 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.green.shade600, // Add green background color
                 ),
                 accountName: Text(
-                  "John Doe", // Replace with user's name
+                  user!.email.toString(),
+                  // Replace with user's name
                   style: TextStyle(
                     color: Colors.black,
                   ),
@@ -97,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              SizedBox(height: 5), // Add space between buttons
+              SizedBox(height: 10), // Add space between buttons
               ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Material(
@@ -129,7 +131,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              SizedBox(height: 5), // Add space between buttons
+              SizedBox(height: 10), // Add space between buttons
               ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Material(
@@ -139,7 +141,7 @@ class _HomePageState extends State<HomePage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => ContactUsPage()),
+                            builder: (context) => CommunityPage()),
                       );
                     },
                     child: Container(
@@ -161,7 +163,7 @@ class _HomePageState extends State<HomePage> {
                   ),
                 ),
               ),
-              SizedBox(height: 5), // Add space between buttons
+              SizedBox(height: 10), // Add space between buttons
               ClipRRect(
                 borderRadius: BorderRadius.circular(10),
                 child: Material(
@@ -178,7 +180,7 @@ class _HomePageState extends State<HomePage> {
                       color: Colors.green.shade700,
                       child: ListTile(
                         leading: Image.asset(
-                          'assets/images/Community1.png', // Replace with your image asset path
+                          'assets/images/ContactUs.png', // Replace with your image asset path
                           width: 40,
                           height: 40,
                         ),

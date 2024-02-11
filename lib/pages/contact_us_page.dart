@@ -5,7 +5,9 @@ class ContactUsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Contact Us'),
+        centerTitle: true,
+        title: Text(''),
+        backgroundColor: Colors.green.shade600,
       ),
       body: SingleChildScrollView(
         child: Center(
@@ -30,7 +32,7 @@ class ContactUsPage extends StatelessWidget {
                   ),
                   SizedBox(height: 10.0),
                   Text(
-                    'Welcome to our website! Green Circuit is more than just an e-waste disposal company.\n\n'
+                    'Welcome to our App! Green Circuit is more than just an e-waste disposal company.\n\n'
                     'We are a team of environmental specialists dedicated to safe and sustainable electronics recycling.\n\n'
                     'Our state-of-the-art facilities and certified processes ensure maximum resource recovery and the utmost protection for our planet. Trust Green Circuit for reliable, compliant e-waste solutions.',
                     textAlign: TextAlign.center,
@@ -44,9 +46,9 @@ class ContactUsPage extends StatelessWidget {
                     ),
                   ),
                   SizedBox(height: 10.0),
-                  Text('Email: info@yourwebsite.com'),
-                  Text('Phone: +1 (234) 567-890'),
-                  Text('Phone: +1 (234) 567-890'),
+                  Text('Email: green.circuit@gmail.com'),
+                  Text('Phone: +91 (234) 567-890'),
+                  Text('Phone: +91 (234) 567-890'),
                 ],
               ),
             ),

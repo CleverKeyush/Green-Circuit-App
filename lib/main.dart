@@ -1,5 +1,5 @@
 import 'dart:io';
-
+import 'package:e_waste_catalog/pages/forgot_password_page.dart';
 import 'package:e_waste_catalog/pages/auth_page.dart';
 import 'package:e_waste_catalog/pages/form_page.dart';
 import 'package:e_waste_catalog/pages/guide_page.dart';

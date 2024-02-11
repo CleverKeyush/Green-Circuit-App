@@ -25,6 +25,7 @@ class EWasteManagementScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('E-Waste Management Guide'),
+        backgroundColor: Colors.green.shade600,
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(20.0),
