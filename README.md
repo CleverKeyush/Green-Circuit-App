@@ -1,4 +1,4 @@
-# e_waste_catalog
+# E_waste_catalog
 
 A new Flutter project.
 
