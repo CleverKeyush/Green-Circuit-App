@@ -3,7 +3,7 @@
 
 ## Overview
 
-The **E-Waste Catalog** is a mobile application built with Flutter that helps users manage electronic waste efficiently. This platform allows users to catalog, track, and recycle their electronic devices, promoting responsible e-waste disposal.
+The **Green Circuit App ** is a mobile application built with Flutter that helps users manage electronic waste efficiently. This platform allows users to catalog, track, and recycle their electronic devices, promoting responsible e-waste disposal.
 
 ## Features
 
@@ -25,5 +25,5 @@ The **E-Waste Catalog** is a mobile application built with Flutter that helps us
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/CleverKeyush/e_waste_catalog.git
-   cd e_waste_catalog
+   git clone https://github.com/CleverKeyush/Green-Circuit-App.git
+   cd Green-Circuit-App
