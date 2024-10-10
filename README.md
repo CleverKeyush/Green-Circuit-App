@@ -1,16 +1,29 @@
-# E_waste_catalog
+# E-Waste Catalog
 
-A new Flutter project.
 
-## Getting Started
+## Overview
 
-This project is a starting point for a Flutter application.
+The **E-Waste Catalog** is a mobile application built with Flutter that helps users manage electronic waste efficiently. This platform allows users to catalog, track, and recycle their electronic devices, promoting responsible e-waste disposal.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **User Authentication**: Secure sign-up and login using Firebase Authentication.
+- **Catalog Management**: Add, edit, and delete e-waste items.
+- **Location Services**: Use Google Maps API to find local recycling centers.
+- **Recycling Information**: Access details about local recycling options.
+- **Google Forms Integration**: Submit e-waste disposal requests easily.
+- **Responsive Design**: Optimized for both Android and iOS devices.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Technologies Used
+
+- **Framework**: Flutter
+- **Backend**: Firebase (Firestore, Authentication)
+- **Maps**: Google Maps API
+- **Forms**: Google Forms Integration
+
+## Installation
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/CleverKeyush/e_waste_catalog.git
+   cd e_waste_catalog
