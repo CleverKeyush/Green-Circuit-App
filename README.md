@@ -1,4 +1,4 @@
-# E-Waste Catalog
+# Green-Circuit-App
 
 
 ## Overview
